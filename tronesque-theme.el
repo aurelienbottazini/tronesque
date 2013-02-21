@@ -1,7 +1,6 @@
 (deftheme tronesque
   "Created 2013-02-20.")
 
-;; this is a comment
 (custom-theme-set-faces
  'tronesque
  '(button ((t (:background "#afc0fd" :foreground "#081724" :box (:line-width 2 :style released-button)))))
@@ -33,6 +32,9 @@
  '(highlight ((t (:background "#ebea48" :foreground "#081724"))))
  '(hl-line ((t (:background "#033340" (:inherit (nil))))))
  '(idle-highlight ((t (:foreground "#fffe4e"))))
+ '(ido-indicator ((t (:background "#d85941" :foreground "#081724" :width condensed))))
+ '(ido-only-match ((t (:foreground "#68f6cb"))))
+ '(ido-subdir ((t (:foreground "#d85941"))))
  '(info-menu-star ((t (:foreground "#d85941"))))
  '(info-xref ((t (:foreground "#5fc9a6"))))
  '(isearch ((t (:weight bold :foreground "#081724" :background "#fffe4e"))))
