@@ -56,7 +56,17 @@
  '(secondary-selection ((t (:background "brightblue"))))
  '(shadow ((t (:foreground "blue"))))
  '(trailing-whitespace ((t (:background "red"))))
+
  '(magit-item-highlight ((t (:foreground "brightred"))))
+ '(outline-1 ((t (:foreground "red"))))
+ '(outline-2 ((t (:foreground "yellow"))))
+ '(outline-3 ((t (:foreground "brightgreen"))))
+ '(outline-4 ((t (:foreground "green"))))
+ '(outline-5 ((t (:foreground "brightmagenta"))))
+ '(outline-6 ((t (:foreground "brightblue"))))
+ '(outline-7 ((t (:foreground "magenta"))))
+ '(outline-8 ((t (:foreground "blue"))))
+
 )
 
 (provide-theme 'tronesque-terminal)
