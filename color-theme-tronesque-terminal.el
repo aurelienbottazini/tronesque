@@ -28,7 +28,7 @@
  '(font-lock-variable-name-face ((t (:foreground "red"))))
  '(font-lock-warning-face ((t (:foreground "brightred" :underline t))))
  '(fringe ((t (:foreground "black" :background "#effffe"))))
- '(header-line ((t (:box (:line-width -1 :color nil :style released-button) :foreground "black" :background "white"))))
+ '(header-line ((t (:box (:line-width -1 :color nil :style released-button) :foreground "yellow" :background "black"))))
  '(highlight ((t (:background "yellow" :foreground "black"))))
  '(hl-line ((t (:background "brightblack"))))
  '(idle-highlight ((t (:foreground "brightyellow"))))
@@ -56,6 +56,7 @@
  '(secondary-selection ((t (:background "brightblue"))))
  '(shadow ((t (:foreground "blue"))))
  '(trailing-whitespace ((t (:background "red"))))
+ '(magit-item-highlight ((t (:foreground "brightred"))))
 )
 
 (provide-theme 'tronesque-terminal)
