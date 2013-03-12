@@ -1,4 +1,4 @@
 Color Themes based on Tron.
 
-![terminal with tron theme](./terminal.jpg)
-![emacs with tron theme](./color-theme-tronesque.el.jpg)
+![terminal with tron theme](./images/terminal.jpg)
+![emacs with tron theme](./images/color-theme-tronesque.el.jpg)
