@@ -1,3 +1,5 @@
+require 'erb'
+
 class Builder < Thor
 
   # all colors used by themes, named based on where I got them
@@ -26,5 +28,12 @@ class Builder < Thor
 
   desc "build_themes", 'uses erb templates to build themes'
   def build_themes
+    Dir.glob('templates/*.erb').each do |erb_file_path|
+      theme_path = File.expand_path("./generated/#{erb_file_path.split("/").last[0..-5]}")
+      generated_theme_file = File.new(theme_path, "w:utf-8")
+      erb_theme_file = ERB.new(File.read(erb_file_path))
+      generated_theme_file << erb_theme_file.result(binding)
+      generated_theme_file.close
+    end
   end
 end
