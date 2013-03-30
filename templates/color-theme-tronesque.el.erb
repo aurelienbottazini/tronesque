@@ -68,6 +68,8 @@
  '(outline-8 ((t (:foreground "<%= COLORS[:black_outfit_brighter] %>"))))
 
  '(success ((t (:foreground "<%= COLORS[:end_credit_green_text] %>" :weight bold))))
+ '(compilation-mode-line-exit ((t (:inherit compilation-info :foreground "<%= COLORS[:end_credit_green_text] %>" :weight bold))))
+ '(compilation-mode-line-fail ((t (:inherit compilation-error :foreground "<%= COLORS[:inside_tron_red] %>" :weight bold))))
 )
 
 (provide-theme 'tronesque)
