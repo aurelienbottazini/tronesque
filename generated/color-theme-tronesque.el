@@ -67,7 +67,7 @@
  '(outline-7 ((t (:foreground "#96a5d9"))))
  '(outline-8 ((t (:foreground "#1d5483"))))
 
- '(success ((t (:background "#5dc9a6" :weight bold))))
+ '(success ((t (:background "#5dc9a6" :foreground "#081724" :weight bold))))
  '(compilation-mode-line-exit ((t (:inherit compilation-info :background "#5dc9a6" :weight bold))))
  '(compilation-mode-line-fail ((t (:inherit compilation-error :background "#d85941" :weight bold))))
 
@@ -86,6 +86,10 @@
  '(erc-input-face ((t (:foreground "#f5b55f"))))
  '(erc-my-nick-face ((t (:foreground "#ebea48"))))
  '(erc-current-nick-face ((t (:foreground "#ebea48"))))
+
+ '(sp-show-pair-match-face ((t (:background "#2872b2" :foreground "#d3f9ee"))))
+ '(sp-show-pair-mismatch-face ((t (:background "#d85941" :foreground "#081724"))))
+
 )
 
 (provide-theme 'tronesque)

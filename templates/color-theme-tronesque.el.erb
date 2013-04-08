@@ -67,7 +67,7 @@
  '(outline-7 ((t (:foreground "<%= COLORS[:interface_button_darker] %>"))))
  '(outline-8 ((t (:foreground "<%= COLORS[:black_outfit_brighter] %>"))))
 
- '(success ((t (:background "<%= COLORS[:end_credit_green_text] %>" :weight bold))))
+ '(success ((t (:background "<%= COLORS[:end_credit_green_text] %>" :foreground "<%= COLORS[:black_outfit] %>" :weight bold))))
  '(compilation-mode-line-exit ((t (:inherit compilation-info :background "<%= COLORS[:end_credit_green_text] %>" :weight bold))))
  '(compilation-mode-line-fail ((t (:inherit compilation-error :background "<%= COLORS[:inside_tron_red] %>" :weight bold))))
 
@@ -86,6 +86,10 @@
  '(erc-input-face ((t (:foreground "<%= COLORS[:inside_tron_orange] %>"))))
  '(erc-my-nick-face ((t (:foreground "<%= COLORS[:clu_yellow] %>"))))
  '(erc-current-nick-face ((t (:foreground "<%= COLORS[:clu_yellow] %>"))))
+
+ '(sp-show-pair-match-face ((t (:background "<%= COLORS[:black_outfit_even_brighter]%>" :foreground "<%= COLORS[:text_menu_bar_frame_contour] %>"))))
+ '(sp-show-pair-mismatch-face ((t (:background "<%= COLORS[:inside_tron_red] %>" :foreground "<%= COLORS[:black_outfit] %>"))))
+
 )
 
 (provide-theme 'tronesque)
