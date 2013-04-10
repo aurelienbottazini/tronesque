@@ -1,7 +1,6 @@
 (deftheme tronesque
   "Created 2013-02-20.")
 
-
 (let (
       (base00 "#081724")
       (base01 "#033340")
@@ -21,7 +20,6 @@
       (blue "#bad6e2")
       (cyan "#d2f1ff")
       (green "#68f6cb"))
-
 
 (custom-theme-set-faces
  'tronesque
