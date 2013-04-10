@@ -8,8 +8,8 @@
       (base02 "#1d5483")
       (base03 "#2872b2")
 
-
-      (base05 "#d3f9ee")
+      (base04 "#d3f9ee")
+      (base05 "#a6f3dd")
       (base06 "#effffe")
       (base07 "#fffed9")
 
@@ -28,10 +28,10 @@
 
  `(button ((t (:background ,magenta :foreground ,base00 :box (:line-width 2 :style released-button)))))
  `(button ((t (:background ,magenta :foreground ,base00 :box (:line-width 2 :style released-button)))))
- `(cursor ((t (:inverse-video t :foreground ,base00 :background ,base05))))
+ `(cursor ((t (:inverse-video t :foreground ,base00 :background ,base04))))
  `(custom-button ((t (:background ,magenta :foreground ,base00 :box (:line-width 2 :style released-button)))))
  `(custom-state ((t (:foreground ,green))))
- `(default ((t (:background ,base00 :foreground ,base05))))
+ `(default ((t (:background ,base00 :foreground ,base04))))
  `(escape-glyph ((t (:foreground ,green))))
  `(flymake-errline ((t (:background ,red :foreground ,base00 :underline nil))))
  `(flymake-warnline ((t (:background ,orange :foreground ,base00 :underline nil))))
@@ -51,7 +51,7 @@
  `(font-lock-variable-name-face ((t (:foreground ,red))))
  `(font-lock-warning-face ((t (:foreground ,orange :underline t))))
  `(fringe ((t (:foreground ,base00 :background ,base06))))
- `(header-line ((t (:box (:line-width -1 :color nil :style released-button) :foreground ,base00 :background ,base05))))
+ `(header-line ((t (:box (:line-width -1 :color nil :style released-button) :foreground ,base00 :background ,base04))))
  `(highlight ((t (:background ,yellow))))
  `(hl-line ((t (:background ,base01))))
  `(idle-highlight ((t (:background ,base01 :foreground nil))))
@@ -67,11 +67,11 @@
  `(link-visited ((t (:foreground ,blue :underline t))))
  `(match ((t (:foreground ,base00 :background ,blue))))
  `(minibuffer-prompt ((t (:foreground ,yellow))))
- `(mode-line ((t (:box (:line-width -1 :color nil :style nil) :foreground ,base05 :background ,base00))))
- `(mode-line-buffer-id ((t (:weight normal :foreground ,base02 :background ,base05))))
+ `(mode-line ((t (:box (:line-width -1 :color nil :style nil) :foreground ,base04 :background ,base00))))
+ `(mode-line-buffer-id ((t (:weight normal :foreground ,base02 :background ,base04))))
  `(mode-line-emphasis ((t (:weight bold))))
  `(mode-line-highlight ((t :background ,magenta :foreground ,base00 (:box (:line-width 2 :style released-button)))))
- `(mode-line-inactive ((t (:box (:line-width -1 :color nil :style nil) :foreground ,base00 :background ,base05))))
+ `(mode-line-inactive ((t (:box (:line-width -1 :color nil :style nil) :foreground ,base00 :background ,base04))))
  `(next-error ((t (:inherit (region)))))
  `(org-hide ((t (:background ,base00 :foreground ,base00))))
  `(query-replace ((t (:inherit (isearch)))))
@@ -104,7 +104,7 @@
  `(erc-error-face ((t (:foreground ,red))))
  `(erc-fool-face ((t (:foreground ,base02))))
  `(erc-header-line ((t (:background ,base07 :foreground ,base00))))
- `(erc-inverse-face ((t (:background ,base05 :foreground ,base00))))
+ `(erc-inverse-face ((t (:background ,base04 :foreground ,base00))))
  `(erc-keyword-face ((t (:foreground ,green :weight bold))))
  `(erc-nick-msg-face ((t (:foreground ,red :weight bold))))
  `(erc-notice-face ((t (:foreground ,base02 :weight bold))))
@@ -115,7 +115,7 @@
  `(erc-my-nick-face ((t (:foreground ,yellow))))
  `(erc-current-nick-face ((t (:foreground ,yellow))))
  `
- `(sp-show-pair-match-face ((t (:background ,base03 :foreground ,base05))))
+ `(sp-show-pair-match-face ((t (:background ,base03 :foreground ,base04))))
  `(sp-show-pair-mismatch-face ((t (:background ,red :foreground ,base00))))
 
  )
@@ -125,10 +125,10 @@
 
  `(ansi-color-names-vector
    ;; black, red, green, yellow, blue, magenta, cyan, white
-   [,base00 ,red ,green ,yellow ,blue ,magenta ,cyan ,base05])
+   [,base00 ,red ,green ,yellow ,blue ,magenta ,cyan ,base04])
  `(ansi-term-color-vector
    ;; black, red, green, yellow, blue, magenta, cyan, white
-   [unspecified ,base00 ,red ,green ,yellow ,blue ,magenta ,cyan ,base05]))
+   [unspecified ,base00 ,red ,green ,yellow ,blue ,magenta ,cyan ,base04]))
 
 )
 
