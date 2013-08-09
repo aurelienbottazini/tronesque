@@ -48,7 +48,7 @@
  `(font-lock-type-face ((t (:foreground ,orange))))
  `(font-lock-variable-name-face ((t (:foreground ,red))))
  `(font-lock-warning-face ((t (:foreground ,orange :underline t))))
- `(fringe ((t (:foreground ,base00 :background ,base06))))
+ `(fringe ((t (:foreground ,base03 :background ,base02))))
  `(header-line ((t (:box (:line-width -1 :color nil :style released-button) :foreground ,base00 :background ,base04))))
  `(highlight ((t (:background ,yellow :foreground ,base00))))
  `(hl-line ((t (:background ,base01))))
@@ -205,9 +205,9 @@
 (make-face 'mode-line-80col-face)
 
 (set-face-attribute 'mode-line nil
-                    :foreground "#081724" :background "#2872b2"
+                    :foreground "#081724" :background "#d3f9ee"
                     :inverse-video nil
-                    :box '(:line-width 6 :color "#2872b2"  :style nil))
+                    :box '(:line-width 6 :color "#d3f9ee"  :style nil))
 (set-face-attribute 'mode-line-inactive nil
                     :foreground "#081724" :background "#1d5483"
                     :inverse-video nil
@@ -215,8 +215,7 @@
 
 (set-face-attribute 'mode-line-read-only-face nil
                     :inherit 'mode-line-face
-                    :foreground "#ff694d"
-                    :box '(:line-width 2 :color "#ff694d"))
+                    :foreground "#ff694d")
 (set-face-attribute 'mode-line-modified-face nil
                     :inherit 'mode-line-face
                     :background "#ff694d"
