@@ -48,7 +48,7 @@
  `(font-lock-type-face ((t (:foreground ,orange))))
  `(font-lock-variable-name-face ((t (:foreground ,red))))
  `(font-lock-warning-face ((t (:foreground ,orange :underline t))))
- `(fringe ((t (:foreground ,base02 :background ,base02))))
+ `(fringe ((t (:foreground ,base01 :background ,base01))))
  `(header-line ((t (:box (:line-width -1 :color nil :style released-button) :foreground ,base00 :background ,base04))))
  `(highlight ((t (:background ,yellow :foreground ,base00))))
  `(hl-line ((t (:background ,base01))))
@@ -113,6 +113,11 @@
  `(sp-show-pair-match-face ((t (:inherit show-paren-match))))
  `(sp-show-pair-mismatch-face ((t (:inherit show-paren-mismatch))))
  `(sp-pair-overlay-face ((t (:inherit sp-show-pair-match-face))))
+
+ `(ac-completion-face ((t (:foreground ,base02 :underline t))))
+ `(ac-candidate-face ((t (:background ,base04 :foreground ,base00))))
+ `(ac-candidate-mouse-face ((t (:inherit ac-completion-face))))
+ `(ac-selection-face ((t (:background ,base02))))
 
  )
 
