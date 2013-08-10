@@ -1,25 +1,19 @@
 ;;; tron-theme.el --- Espresso Tutti Colori port for Emacs
 
 ;; Author: Aurélien Bottazini Kühl <aurelienbottazini.com>
-;; URL: https://github.com/dgutov/espresso-theme
-;; Version: 20130301.1148
-;; X-Original-Version: 1.0
 
 (deftheme tronesque
   "Theme based on Tron universe. Colors are inspired / taken from the movies.
 More information on Tron: https://en.wikipedia.org/wiki/Tron")
 
-(let (
-      (base00 "#081724")
+(let ((base00 "#081724")
       (base01 "#033340")
       (base02 "#1d5483")
       (base03 "#2872b2")
-
       (base04 "#d3f9ee")
       (base05 "#a6f3dd")
       (base06 "#effffe")
       (base07 "#fffed9")
-
       (red "#ff694d")
       (orange "#f5b55f")
       (yellow "#fffe4e")
@@ -59,7 +53,7 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(fringe ((t (:foreground ,base01 :background ,base01))))
    `(header-line ((t (:box (:line-width -1 :color nil :style released-button) :foreground ,base00 :background ,base04))))
    `(highlight ((t (:background ,yellow :foreground ,base00))))
-   `(hl-line ((t (:background ,base01))))
+   `(hl-line ((t (:background ,base01 :inherit nil))))
    `(idle-highlight ((t (:background ,base01 :foreground nil))))
    `(ido-indicator ((t (:background ,red :foreground ,base00 :width condensed))))
    `(ido-only-match ((t (:foreground ,green))))
@@ -95,11 +89,11 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(outline-6 ((t (:foreground ,green))))
    `(outline-7 ((t (:foreground ,cyan))))
    `(outline-8 ((t (:foreground ,violet))))
-   `
+
    `(success ((t (:background ,green :foreground ,base00 :weight bold))))
    `(compilation-mode-line-exit ((t (:inherit compilation-info :background ,green :weight bold))))
    `(compilation-mode-line-fail ((t (:inherit compilation-error :background ,red :weight bold))))
-   `
+
    `(erc-dangerous-host-face ((t (:foreground ,red))))
    `(erc-direct-msg-face ((t (:foreground ,red))))
    `(erc-error-face ((t (:foreground ,red))))
@@ -121,13 +115,10 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(sp-show-pair-match-face ((t (:inherit show-paren-match))))
    `(sp-show-pair-mismatch-face ((t (:inherit show-paren-mismatch))))
    `(sp-pair-overlay-face ((t (:inherit sp-show-pair-match-face))))
-
    `(ac-completion-face ((t (:foreground ,base02 :underline t))))
    `(ac-candidate-face ((t (:background ,base04 :foreground ,base00))))
    `(ac-candidate-mouse-face ((t (:inherit ac-completion-face))))
-   `(ac-selection-face ((t (:background ,base02))))
-
-   )
+   `(ac-selection-face ((t (:background ,base02)))))
 
   (custom-theme-set-variables
    'tronesque
@@ -186,8 +177,6 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
                   face mode-line-process-face)
      (global-mode-string global-mode-string)
      "    "
-                                        ; nyan-mode uses nyan cat as an alternative to %p
-     (:eval (when nyan-mode (list (nyan-create))))
      ))
 
   ;; Helper function
@@ -269,7 +258,7 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
                       :foreground "black" :background "#eab700"
                       :box '(:line-width 6 :color "#eab700" :style nil)
                       )
-  )
+)
 
 ;;;###autoload
 (when load-file-name
