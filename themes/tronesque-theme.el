@@ -1,6 +1,8 @@
-;;; tron-theme.el --- Espresso Tutti Colori port for Emacs
+;;; tronesque-theme.el --- Color Theme based on Tron universe.
 
-;; Author: Aurélien Bottazini Kühl <aurelienbottazini.com>
+;; Author: Aurélien Bottazini <aurelienbottazini.com>
+;; URL: https://github.com/aurelienbottazini/tronesque
+;; Version: 1.0
 
 (deftheme tronesque
   "Theme based on Tron universe. Colors are inspired / taken from the movies.
