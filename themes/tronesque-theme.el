@@ -4,6 +4,8 @@
 ;; URL: https://github.com/aurelienbottazini/tronesque
 ;; Version: 1.2
 ;;
+;;; Commentary:
+
 ;; In your init file:
 ;; (load-theme 'tronesque)
 ;;
