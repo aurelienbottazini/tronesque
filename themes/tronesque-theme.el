@@ -2,7 +2,7 @@
 
 ;; Author: Aurélien Bottazini <aurelienbottazini.com>
 ;; URL: https://github.com/aurelienbottazini/tronesque
-;; Version: 1.2
+;; Version: 1.3
 ;;
 ;;; Commentary:
 
@@ -91,8 +91,10 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(shadow ((t (:foreground ,base02))))
    `(trailing-whitespace ((t (:background ,red))))
 
+   `(magit-header ((t (:background ,base01 :foreground ,magenta :inherit nil ))))
    `(magit-item-highlight ((t (:background ,base01 :foreground nil))))
    `(magit-diff-hunk-header ((t (:background ,base02))))
+   `(diff-file-header ((t (:background ,base00 :foreground ,magenta :inherit nil :box (:line-width 2 :style released-button)))))
    `(diff-context ((t (:inherit diff-changed :foreground ,base03))))
    `(diff-added ((t (:inherit diff-changed :foreground ,green :background ,base00))))
    `(diff-removed ((t (:inherit diff-changed :foreground ,red :background ,base00))))
