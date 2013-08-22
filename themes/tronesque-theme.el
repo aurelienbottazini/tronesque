@@ -38,10 +38,9 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
   (custom-theme-set-faces
    'tronesque
 
-   `(button ((t (:background ,magenta :foreground ,base00 :box (:line-width 2 :style released-button)))))
-   `(button ((t (:background ,magenta :foreground ,base00 :box (:line-width 2 :style released-button)))))
+   `(button ((t (:background ,base00 :foreground ,magenta :inherit nil :box (:line-width 2 :style released-button)))))
    `(cursor ((t (:background ,base06))))
-   `(custom-button ((t (:background ,magenta :foreground ,base00 :box (:line-width 2 :style released-button)))))
+   `(custom-button ((t (:background ,magenta :foreground ,base00 :inherit nil :box (:line-width 2 :style released-button)))))
    `(custom-state ((t (:foreground ,green))))
    `(default ((t (:background ,base00 :foreground ,base04))))
    `(escape-glyph ((t (:foreground ,green))))
