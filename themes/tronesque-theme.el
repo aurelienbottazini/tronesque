@@ -140,12 +140,70 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(ansi-term-color-vector
      ;; black, red, green, yellow, blue, magenta, cyan, white
      [unspecified ,base00 ,red ,green ,yellow ,blue ,magenta ,cyan ,base04]))
+
+  ;; Extra mode line faces
+  (make-face 'mode-line-read-only-face)
+  (make-face 'mode-line-modified-face)
+  (make-face 'mode-line-clean-face)
+  (make-face 'mode-line-folder-face)
+  (make-face 'mode-line-filename-face)
+  (make-face 'mode-line-position-face)
+  (make-face 'mode-line-mode-face)
+  (make-face 'mode-line-minor-mode-face)
+  (make-face 'mode-line-vc-face)
+  (make-face 'mode-line-80col-face)
+
+  (set-face-attribute 'mode-line nil
+                      :foreground base00 :background base04
+                      :inverse-video nil
+                      :box `(:line-width 6 :color ,base04  :style nil))
+  (set-face-attribute 'mode-line-inactive nil
+                      :foreground base00 :background base02
+                      :inverse-video nil
+                      :box `(:line-width 6 :color ,base02 :style nil))
+  (set-face-attribute 'mode-line-read-only-face nil
+                      :inherit 'mode-line-face
+                      :foreground red)
+  (set-face-attribute 'mode-line-modified-face nil
+                      :inherit 'mode-line-face
+                      :background red
+                      :box `(:line-width 6 :color ,red :style nil))
+  (set-face-attribute 'mode-line-clean-face nil
+                      :inherit 'mode-line-face
+                      :background green
+                      :box `(:line-width 6 :color ,green :style nil))
+  (set-face-attribute 'mode-line-folder-face nil
+                      :inherit 'mode-line-face
+                      :foreground base00
+                      :background violet
+                      :box `(:line-width 6 :color ,violet :style nil))
+  (set-face-attribute 'mode-line-filename-face nil
+                      :inherit 'mode-line-face
+                      :foreground base02
+                      :background violet
+                      :box `(:line-width 6 :color ,violet :style nil)
+                      :weight 'bold)
+  (set-face-attribute 'mode-line-position-face nil
+                      :inherit 'mode-line-face
+                      :height 100)
+  (set-face-attribute 'mode-line-mode-face nil
+                      :inherit 'mode-line-face
+                      :foreground base00
+                      :background orange
+                      :box `(:line-width 6 :color ,orange :style nil))
+  (set-face-attribute 'mode-line-minor-mode-face nil
+                      :foreground base00
+                      :height 110)
+  (set-face-attribute 'mode-line-vc-face nil
+                      :inherit 'mode-line-face
+                      :background green
+                      :box `(:line-width 6 :color ,green :style nil))
+  (set-face-attribute 'mode-line-80col-face nil
+                      :inherit 'mode-line-position-face
+                      :foreground "black" :background orange
+                      :box `(:line-width 6 :color ,orange :style nil))
   )
 
-
-;;"%e" mode-line-front-space mode-line-mule-info mode-line-client mode-line-modified mode-line-remote mode-line-frame-identification mode-line-buffer-identification "   " mode-line-position
-;;(vc-mode vc-mode)
-;;"  " mode-line-modes mode-line-misc-info mode-line-end-spaces
 (defun tronesque-mode-line ()
   "change default modeline"
   (interactive)
@@ -195,72 +253,6 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
       (setq output (concat ".../" output)))
     output))
 
-;; Extra mode line faces
-
-(make-face 'mode-line-read-only-face)
-(make-face 'mode-line-modified-face)
-(make-face 'mode-line-clean-face)
-(make-face 'mode-line-folder-face)
-(make-face 'mode-line-filename-face)
-(make-face 'mode-line-position-face)
-(make-face 'mode-line-mode-face)
-(make-face 'mode-line-minor-mode-face)
-(make-face 'mode-line-vc-face)
-(make-face 'mode-line-80col-face)
-
-(set-face-attribute 'mode-line nil
-                    :foreground "#081724" :background "#d3f9ee"
-                    :inverse-video nil
-                    :box '(:line-width 6 :color "#d3f9ee"  :style nil))
-(set-face-attribute 'mode-line-inactive nil
-                    :foreground "#081724" :background "#1d5483"
-                    :inverse-video nil
-                    :box '(:line-width 6 :color "#1d5483" :style nil))
-
-(set-face-attribute 'mode-line-read-only-face nil
-                    :inherit 'mode-line-face
-                    :foreground "#ff694d")
-(set-face-attribute 'mode-line-modified-face nil
-                    :inherit 'mode-line-face
-                    :background "#ff694d"
-                    :box '(:line-width 6 :color "#ff694d" :style nil))
-(set-face-attribute 'mode-line-clean-face nil
-                    :inherit 'mode-line-face
-                    :background "#68f6cb"
-                    :box '(:line-width 6 :color "#68f6cb" :style nil))
-(set-face-attribute 'mode-line-folder-face nil
-                    :inherit 'mode-line-face
-                    :foreground "#081724"
-                    :background "#96a5d9"
-                    :box '(:line-width 6 :color "#96a5d9" :style nil)
-                    )
-(set-face-attribute 'mode-line-filename-face nil
-                    :inherit 'mode-line-face
-                    :foreground "#1d5483"
-                    :background "#96a5d9"
-                    :box '(:line-width 6 :color "#96a5d9" :style nil)
-                    :weight 'bold)
-(set-face-attribute 'mode-line-position-face nil
-                    :inherit 'mode-line-face
-                    :height 100)
-(set-face-attribute 'mode-line-mode-face nil
-                    :inherit 'mode-line-face
-                    :foreground "#081724"
-                    :background "#f5b55f"
-                    :box '(:line-width 6 :color "#f5b55f" :style nil)
-                    )
-(set-face-attribute 'mode-line-minor-mode-face nil
-                    :foreground "#081724"
-                    :height 110)
-(set-face-attribute 'mode-line-vc-face nil
-                    :inherit 'mode-line-face
-                    :background "#68f6cb"
-                    :box '(:line-width 6 :color "#68f6cb" :style nil))
-(set-face-attribute 'mode-line-80col-face nil
-                    :inherit 'mode-line-position-face
-                    :foreground "black" :background "#eab700"
-                    :box '(:line-width 6 :color "#eab700" :style nil)
-                    )
 
 ;;;###autoload
 (when load-file-name
