@@ -12,28 +12,33 @@
 ;; You can also add:
 ;; (tronesque-mode-line)
 ;; To get a custom mode-line with additional colors
+;;
+;; Supports both Emacs with a window system and Emacs within a
+;; terminal. When used within a terminal you should use tronesque
+;; themed ansi colors (available in github repository)
 
 
 (deftheme tronesque
   "Theme based on Tron universe. Colors are inspired / taken from the movies.
 More information on Tron: https://en.wikipedia.org/wiki/Tron")
 
-(let ((base00 "#081724")
-      (base01 "#033340")
-      (base02 "#1d5483")
-      (base03 "#2872b2")
-      (base04 "#d3f9ee")
-      (base05 "#a6f3dd")
-      (base06 "#effffe")
-      (base07 "#fffed9")
-      (red "#ff694d")
-      (orange "#f5b55f")
-      (yellow "#fffe4e")
-      (magenta "#afc0fd")
-      (violet "#96a5d9")
-      (blue "#bad6e2")
-      (cyan "#d2f1ff")
-      (green "#68f6cb"))
+(let (
+      (base00 (if (window-system) "#081724" "black"))
+      (base01 (if (window-system) "#033340" "brightblack"))
+      (base02 (if (window-system) "#1d5483" "brightyellow"))
+      (base03 (if (window-system) "#2872b2" "brightblue"))
+      (base04 (if (window-system) "#d3f9ee" "white"))
+      (base05 (if (window-system) "#a6f3dd" "brightgreen"))
+      (base06 (if (window-system) "#effffe" "brightwhite"))
+      (base07 (if (window-system) "#fffed9" "brightcyan"))
+      (red (if (window-system) "#ff694d" "red"))
+      (orange (if (window-system) "#f5b55f" "brightred"))
+      (yellow (if (window-system) "#fffe4e" "yellow"))
+      (magenta (if (window-system) "#afc0fd" "brightmagenta"))
+      (violet (if (window-system) "#96a5d9" "magenta"))
+      (blue (if (window-system) "#bad6e2" "blue"))
+      (cyan (if (window-system) "#d2f1ff" "cyan"))
+      (green (if (window-system) "#68f6cb" "green")))
 
   (custom-theme-set-faces
    'tronesque
