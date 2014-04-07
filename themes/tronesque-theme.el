@@ -2,7 +2,7 @@
 
 ;; Author: Aurélien Bottazini <aurelienbottazini.com>
 ;; URL: https://github.com/aurelienbottazini/tronesque
-;; Version: 1.3
+;; Version: 1.4
 ;;
 ;;; Commentary:
 
@@ -92,8 +92,10 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(trailing-whitespace ((t (:background ,red))))
 
    `(magit-header ((t (:background ,base01 :foreground ,magenta :inherit nil ))))
-   `(magit-item-highlight ((t (:background ,base01 :foreground nil))))
+   `(magit-item-highlight ((t (:background ,base01 :foreground ,base06))))
+   `(magit-branch ((t (:foreground ,base05))))
    `(magit-diff-hunk-header ((t (:background ,base02))))
+   `(magit-section-title ((t (:background ,red :foreground ,base04 :inherit nil :box (:line-width 2 :style released-button)))))
    `(diff-file-header ((t (:background ,base00 :foreground ,magenta :inherit nil :box (:line-width 2 :style released-button)))))
    `(diff-context ((t (:inherit diff-changed :foreground ,base03))))
    `(diff-added ((t (:inherit diff-changed :foreground ,green :background ,base00))))
@@ -128,7 +130,7 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(erc-my-nick-face ((t (:foreground ,yellow))))
    `(erc-current-nick-face ((t (:foreground ,yellow))))
 
-   `(show-paren-match ((t (:background ,green :foreground ,base00))))
+   `(show-paren-match ((t (:background ,base03 :foreground ,green))))
    `(show-paren-mismatch ((t (:background ,red :foreground ,base00))))
    `(sp-show-pair-match-face ((t (:inherit show-paren-match))))
    `(sp-show-pair-mismatch-face ((t (:inherit show-paren-mismatch))))
