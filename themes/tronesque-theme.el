@@ -2,6 +2,7 @@
 
 ;; Author: Aurélien Bottazini <aurelienbottazini.com>
 ;; URL: https://github.com/aurelienbottazini/tronesque
+;; Version: 1.5
 
 ;;; Commentary:
 
@@ -85,7 +86,7 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(next-error ((t (:inherit (region)))))
    `(org-hide ((t (:background ,base00 :foreground ,base00))))
    `(org-date ((t (:underline t :foreground ,green))))
-   `(query-replace ((t (:inherit (isearch)))))
+   `(query-regplace ((t (:inherit (isearch)))))
    `(region ((t (:background ,base02))))
    `(secondary-selection ((t (:background "#002b36"))))
    `(shadow ((t (:foreground ,base02))))
