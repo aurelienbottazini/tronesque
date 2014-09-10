@@ -2,8 +2,7 @@
 
 ;; Author: Aurélien Bottazini <aurelienbottazini.com>
 ;; URL: https://github.com/aurelienbottazini/tronesque
-;; Version: 1.4
-;;
+
 ;;; Commentary:
 
 ;; In your init file:
@@ -85,6 +84,7 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(minibuffer-prompt ((t (:foreground ,yellow))))
    `(next-error ((t (:inherit (region)))))
    `(org-hide ((t (:background ,base00 :foreground ,base00))))
+   `(org-date ((t (:underline t :foreground ,green))))
    `(query-replace ((t (:inherit (isearch)))))
    `(region ((t (:background ,base02))))
    `(secondary-selection ((t (:background "#002b36"))))
