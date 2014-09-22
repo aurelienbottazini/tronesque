@@ -43,16 +43,21 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
   (custom-theme-set-faces
    'tronesque
 
+
    `(button ((t (:background ,base00 :foreground ,magenta :inherit nil :box (:line-width 2 :style released-button)))))
    `(cursor ((t (:background ,base06))))
+
    `(custom-button ((t (:background ,magenta :foreground ,base00 :inherit nil :box (:line-width 2 :style released-button)))))
    `(custom-state ((t (:foreground ,green))))
    `(default ((t (:background ,base00 :foreground ,base04))))
+   `(dired-directory ((t (:background ,green :foreground ,base00))))
+   `(dired-symlink ((t (:foreground ,yellow))))
+
    `(escape-glyph ((t (:foreground ,green))))
    `(flymake-errline ((t (:background ,red :foreground ,base00 :underline nil))))
    `(flymake-warnline ((t (:background ,orange :foreground ,base00 :underline nil))))
    `(font-lock-builtin-face ((t (:slant italic :foreground ,violet))))
-   `(font-lock-comment-delimiter-face ((t (:foreground ,base02))))
+   `(font-lock-comment-delimiter-face ((t (:foreground ,violet))))
    `(font-lock-comment-face ((t (:foreground ,violet))))
    `(font-lock-constant-face ((t (:weight bold :foreground ,magenta))))
    `(font-lock-doc-face ((t (:slant italic :foreground ,green))))
