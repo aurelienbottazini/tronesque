@@ -17,7 +17,7 @@
 ;; terminal. When used within a terminal you should use tronesque
 ;; themed ansi colors (available in github repository)
 
-
+;;; Code:
 (deftheme tronesque
   "Theme based on Tron universe. Colors are inspired / taken from the movies.
 More information on Tron: https://en.wikipedia.org/wiki/Tron")
@@ -253,7 +253,7 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
   )
 
 (defun tronesque-mode-line ()
-  "change default modeline"
+  "Change default mode-line."
   (interactive)
   (setq-default
    mode-line-format
@@ -289,7 +289,7 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
 
 ;; Helper function
 (defun shorten-directory (dir max-length)
-  "Show up to `max-length' characters of a directory name `dir'."
+  "Show up a directory named `DIR' with `MAX-LENGTH' characters."
   (let ((path (reverse (split-string (abbreviate-file-name dir) "/")))
         (output ""))
     (when (and path (equal "" (car path)))
