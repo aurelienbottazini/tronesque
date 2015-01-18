@@ -2,7 +2,7 @@
 
 ;; Author: Aurélien Bottazini <aurelienbottazini.com>
 ;; URL: https://github.com/aurelienbottazini/tronesque
-;; Version: 1.5
+;; Version: 1.6
 
 ;;; Commentary:
 
@@ -154,14 +154,14 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(company-preview ((t (:background ,base02 :foreground ,base06))))
    `(company-preview-common ((t (:inherit company-preview :foreground ,base05))))
    `(company-preview-search ((t (:inherit company-preview :background ,yellow))))
-   `(company-scrollbar-bg ((t (:inherit company-tooltip :background ,yellow))))
-   `(company-scrollbar-fg ((t (:background ,orange))))
-   `(company-template-field ((t (:background ,yellow :foreground ,base00))))
-   `(company-tooltip ((t (:background ,yellow :foreground ,base00))))
+   `(company-scrollbar-bg ((t (:inherit company-tooltip :background ,violet))))
+   `(company-scrollbar-fg ((t (:background ,blue))))
+   `(company-template-field ((t (:background ,yellow :foreground ,violet))))
+   `(company-tooltip ((t (:background ,base02 :foreground ,base04))))
    `(company-tooltip-annotation ((t (:inherit company-tooltip :foreground ,base00))))
-   `(company-tooltip-common ((t (:inherit company-tooltip :foreground ,base02))))
-   `(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :foreground ,base02))))
-   `(company-tooltip-selection ((t (:inherit company-tooltip :background ,orange))))
+   `(company-tooltip-common ((t (:inherit company-tooltip :foreground ,base04))))
+   `(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :foreground ,yellow))))
+   `(company-tooltip-selection ((t (:inherit company-tooltip :background ,base01))))
 
    `(helm-buffer-directory ((t (:background ,base00 :foreground ,red))))
    `(helm-buffer-file ((t (:foreground ,base05 :background ,base00))))
@@ -170,11 +170,11 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(helm-buffer-saved-out ((t (:background ,base00 :foreground ,red))))
    `(helm-buffer-size ((t (:foreground ,magenta))))
    `(helm-candidate-number ((t (:background ,red :foreground ,base00))))
-   `(helm-header ((t (:inherit header-line1))))
+   `(helm-header ((t (:inherit header-line))))
    `(helm-prefarg ((t (:foreground ,green))))
    `(helm-selection ((t (:background ,base01 :foreground ,base06 :underline nil))))
    `(helm-separator ((t (:foreground ,red))))
-   `(helm-source-header ((t (:background ,base07 :foreground ,base00 :weight bold :height 1.3))))
+   `(helm-source-header ((t (:background ,violet :foreground ,base00 :weight bold :height 1.3))))
    `(helm-visible-mark ((t (:background ,green :foreground ,base00))))
 
    )
