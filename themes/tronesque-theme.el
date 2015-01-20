@@ -2,7 +2,7 @@
 
 ;; Author: Aurélien Bottazini <aurelienbottazini.com>
 ;; URL: https://github.com/aurelienbottazini/tronesque
-;; Version: 1.6
+;; Version: 1.7
 
 ;;; Commentary:
 
@@ -176,6 +176,17 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(helm-separator ((t (:foreground ,red))))
    `(helm-source-header ((t (:background ,violet :foreground ,base00 :weight bold :height 1.3))))
    `(helm-visible-mark ((t (:background ,green :foreground ,base00))))
+
+   `(whitespace-empty ((t (:background ,yellow :foreground ,base00))))
+            `(whitespace-hspace ((t (:background ,red :foreground ,yellow))))
+   `(whitespace-indentation ((t (:background ,red :foreground ,yellow))))
+   `(whitespace-line ((t (:foreground ,red))))
+   `(whitespace-newline ((t (:foreground ,base02 :weight normal))))
+   `(whitespace-space ((t (:background ,base00 :foreground ,base02))))
+   `(whitespace-space-after-tab ((t (:background ,yellow :foreground ,red))))
+   `(whitespace-pace-before-tab ((t (:background ,yellow :foreground ,orange))))
+    `(whitespace-tab ((t (:background ,red :foreground ,yellow))))
+    `(whitespace-trailing ((t (:background ,red :foreground ,yellow :weight bold))))
 
    )
 
