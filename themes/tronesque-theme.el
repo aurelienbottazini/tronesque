@@ -2,7 +2,7 @@
 
 ;; Author: Aurélien Bottazini <aurelienbottazini.com>
 ;; URL: https://github.com/aurelienbottazini/tronesque
-;; Version: 1.7
+;; Version: 1.8
 
 ;;; Commentary:
 
@@ -213,13 +213,13 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
   (make-face 'mode-line-80col-face)
 
   (set-face-attribute 'mode-line nil
-                      :foreground base00 :background base04
-                      :inverse-video nil
-                      :box `(:line-width 6 :color ,base04  :style nil))
-  (set-face-attribute 'mode-line-inactive nil
                       :foreground base00 :background base02
                       :inverse-video nil
-                      :box `(:line-width 6 :color ,base02 :style nil))
+                      :box `(:line-width 6 :color ,base02  :style nil))
+  (set-face-attribute 'mode-line-inactive nil
+                      :foreground base00 :background base01
+                      :inverse-video nil
+                      :box `(:line-width 6 :color ,base01 :style nil))
   (set-face-attribute 'mode-line-read-only-face nil
                       :inherit 'mode-line-face
                       :foreground red)
