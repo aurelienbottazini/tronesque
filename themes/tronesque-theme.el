@@ -83,7 +83,7 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(font-lock-warning-face ((t (:foreground ,orange :underline t))))
    `(fringe ((t (:foreground ,base04 :background ,base01))))
    `(header-line ((t (:box (:line-width -1 :color nil :style released-button)
-                      :foreground ,base00 :background ,base03))))
+                      :foreground ,base00 :background ,base07))))
    `(highlight ((t (:background ,yellow :foreground ,base00))))
    `(hl-line ((t (:background ,base01 :inherit nil))))
    `(idle-highlight ((t (:background ,base01 :foreground nil))))
@@ -208,7 +208,7 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(helm-buffer-saved-out ((t (:background ,base00 :foreground ,red))))
    `(helm-buffer-size ((t (:foreground ,magenta))))
    `(helm-candidate-number ((t (:background ,yellow :foreground ,base00))))
-   `(helm-header ((t (:background ,base02 :inherit header-line))))
+   `(helm-header ((t (:inherit header-line))))
    `(helm-prefarg ((t (:foreground ,green))))
    `(helm-selection ((t (:background ,green
                          :foreground ,base00
@@ -257,32 +257,32 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
   (set-face-attribute 'mode-line nil
                       :foreground base00 :background base03
                       :inverse-video nil
-                      :box `(:line-width 6 :color ,base03  :style nil))
+                      :box `(:line-width 2 :color ,base03  :style nil))
   (set-face-attribute 'mode-line-inactive nil
                       :foreground base00 :background base01
                       :inverse-video nil
-                      :box `(:line-width 6 :color ,base01 :style nil))
+                      :box `(:line-width 2 :color ,base01 :style nil))
   (set-face-attribute 'mode-line-read-only-face nil
                       :inherit 'mode-line-face
                       :foreground red)
   (set-face-attribute 'mode-line-modified-face nil
                       :inherit 'mode-line-face
                       :background red
-                      :box `(:line-width 6 :color ,red :style nil))
+                      :box `(:line-width 2 :color ,red :style nil))
   (set-face-attribute 'mode-line-clean-face nil
                       :inherit 'mode-line-face
                       :background green
-                      :box `(:line-width 6 :color ,green :style nil))
+                      :box `(:line-width 2 :color ,green :style nil))
   (set-face-attribute 'mode-line-folder-face nil
                       :inherit 'mode-line-face
                       :foreground base00
-                      :background violet
-                      :box `(:line-width 6 :color ,violet :style nil))
+                      :background blue
+                      :box `(:line-width 2 :color ,blue :style nil))
   (set-face-attribute 'mode-line-filename-face nil
                       :inherit 'mode-line-face
                       :foreground base02
-                      :background violet
-                      :box `(:line-width 6 :color ,violet :style nil)
+                      :background orange
+                      :box `(:line-width 2 :color ,orange :style nil)
                       :weight 'bold)
   (set-face-attribute 'mode-line-position-face nil
                       :inherit 'mode-line-face
@@ -290,19 +290,19 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
   (set-face-attribute 'mode-line-mode-face nil
                       :inherit 'mode-line-face
                       :foreground base00
-                      :background orange
-                      :box `(:line-width 6 :color ,orange :style nil))
+                      :background blue
+                      :box `(:line-width 2 :color ,blue :style nil))
   (set-face-attribute 'mode-line-minor-mode-face nil
                       :foreground base00
                       :height 110)
   (set-face-attribute 'mode-line-vc-face nil
                       :inherit 'mode-line-face
                       :background green
-                      :box `(:line-width 6 :color ,green :style nil))
+                      :box `(:line-width 2 :color ,green :style nil))
   (set-face-attribute 'mode-line-80col-face nil
                       :inherit 'mode-line-position-face
                       :foreground "black" :background orange
-                      :box `(:line-width 6 :color ,orange :style nil))
+                      :box `(:line-width 2 :color ,orange :style nil))
   )
 
 (defun tronesque-mode-line ()
