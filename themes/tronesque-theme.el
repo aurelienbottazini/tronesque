@@ -2,7 +2,7 @@
 
 ;; Author: Aurélien Bottazini <aurelienbottazini.com>
 ;; URL: https://github.com/aurelienbottazini/tronesque
-;; Version: 1.9
+;; Version: 2.0
 
 ;;; Commentary:
 
@@ -227,9 +227,16 @@ More information on Tron: https://en.wikipedia.org/wiki/Tron")
    `(whitespace-space ((t (:background ,base00 :foreground ,base02))))
    `(whitespace-space-after-tab ((t (:background ,yellow :foreground ,red))))
    `(whitespace-pace-before-tab ((t (:background ,yellow :foreground ,orange))))
-    `(whitespace-tab ((t (:background ,red :foreground ,yellow))))
-    `(whitespace-trailing ((t (:background ,red
-                               :foreground ,yellow :weight bold))))
+   `(whitespace-tab ((t (:background ,red :foreground ,yellow))))
+   `(whitespace-trailing ((t (:background ,red
+                              :foreground ,yellow :weight bold))))
+
+    `(markdown-header-face ((t (:foreground ,red :weight bold))))
+    `(markdown-header-face-1 ((t (:inherit markdown-header-face :height 2.75))))
+    `(markdown-header-face-2 ((t (:inherit markdown-header-face :height 2.1))))
+    `(markdown-header-face-3 ((t (:inherit markdown-header-face :height 1.7))))
+    `(markdown-header-face-4 ((t (:inherit markdown-header-face :height 1.3))))
+    `(markdown-header-face-5 ((t (:inherit markdown-header-face :height 1.05))))
    )
 
   (custom-theme-set-variables
