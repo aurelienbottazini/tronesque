@@ -1,3 +1,6 @@
+License: GPL-3+
+Copyright (c) 2017  Aurélien Bottazini
+
 Color Themes inspired from Tron.
 
 ![terminal with tron theme](./images/terminal.jpg)
